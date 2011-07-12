@@ -55,7 +55,7 @@ extern "C" {
 /*  Version macros for compile-time API version detection                     */
 #define ZMQ_VERSION_MAJOR 3
 #define ZMQ_VERSION_MINOR 0
-#define ZMQ_VERSION_PATCH 0
+#define ZMQ_VERSION_PATCH 1
 
 #define ZMQ_MAKE_VERSION(major, minor, patch) \
     ((major) * 10000 + (minor) * 100 + (patch))
@@ -146,7 +146,7 @@ ZMQ_EXPORT int zmq_term (void *context);
 /*  0MQ socket definition.                                                    */
 /******************************************************************************/
 
-/*  Socket types.                                                             */ 
+/*  Socket types.                                                             */
 #define ZMQ_PAIR 0
 #define ZMQ_PUB 1
 #define ZMQ_SUB 2
@@ -185,7 +185,7 @@ ZMQ_EXPORT int zmq_term (void *context);
 #define ZMQ_RCVTIMEO 27
 #define ZMQ_SNDTIMEO 28
 #define ZMQ_RCVLABEL 29
-    
+
 /*  Send/recv options.                                                        */
 #define ZMQ_DONTWAIT 1
 #define ZMQ_SNDMORE 2
@@ -194,7 +194,7 @@ ZMQ_EXPORT int zmq_term (void *context);
 ZMQ_EXPORT void *zmq_socket (void *context, int type);
 ZMQ_EXPORT int zmq_close (void *s);
 ZMQ_EXPORT int zmq_setsockopt (void *s, int option, const void *optval,
-    size_t optvallen); 
+    size_t optvallen);
 ZMQ_EXPORT int zmq_getsockopt (void *s, int option, void *optval,
     size_t *optvallen);
 ZMQ_EXPORT int zmq_bind (void *s, const char *addr);
