@@ -59,3 +59,6 @@ foreign/openpgm/*
 !foreign/openpgm/Makefile.am
 zeromq-*.tar.gz
 zeromq-*.zip
+builds/redhat/zeromq.spec
+test_reqrep_drop
+test_sub_forward
