@@ -90,7 +90,8 @@ Building
 Distribution
 ------------
 
-* Removed Debian packaging from the product.
+* Removed Debian packaging, which is now available at packages.debian.org
+  or via apt-get.
 
 
 Older versions
