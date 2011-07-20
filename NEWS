@@ -23,7 +23,7 @@ New functionality
 * A new LABEL flag was added to the wire format. The flag distinguishes
   message parts used by 0MQ (labels) from user payload message parts.
 
-* Theer is a new wire format for the REQ/REP pattern. First, the empty
+* There is a new wire format for the REQ/REP pattern. First, the empty
   bottom-of-the-stack message part is not needed any more, the LABEL
   flag is used instead. Secondly, peer IDs are 32-bit integers rather
   than 17-byte UUIDs.
